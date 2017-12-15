@@ -37,6 +37,7 @@ remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
 
+
 //form
 
 
@@ -590,8 +591,91 @@ add_action( 'admin_menu', 'remove_admin_menus' );
 function remove_admin_menus() {
     remove_menu_page( 'edit.php' );
     remove_menu_page( 'edit-comments.php' );
-    // remove_menu_page( 'themes.php' );  
+    remove_menu_page( 'themes.php' );  
     remove_menu_page( 'tools.php' );  
     remove_menu_page( 'plugins.php' );  
+    remove_menu_page( 'index.php' );  
 }
 
+function remove_theme_submenu() {
+    $current_user = wp_get_current_user();
+
+    if ($current_user->user_login !== 'administrator') {
+        remove_submenu_page('themes.php', 'themes.php');
+        remove_submenu_page('themes.php', 'theme-editor.php');
+        remove_submenu_page('themes.php', 'nav-menus.php');
+
+        remove_menu_page( 'users.php' );  
+    }
+  
+}
+add_action('admin_init', 'remove_theme_submenu', 100);
+
+
+function remove_admin_bar_links() {
+    global $wp_admin_bar;
+    $wp_admin_bar->remove_menu('wp-logo');          // Remove the WordPress logo
+    $wp_admin_bar->remove_menu('about');            // Remove the about WordPress link
+    $wp_admin_bar->remove_menu('wporg');            // Remove the WordPress.org link
+    $wp_admin_bar->remove_menu('documentation');    // Remove the WordPress documentation link
+    $wp_admin_bar->remove_menu('support-forums');   // Remove the support forums link
+    $wp_admin_bar->remove_menu('feedback');         // Remove the feedback link
+    // $wp_admin_bar->remove_menu('site-name');        // Remove the site name menu
+    $wp_admin_bar->remove_menu('view-site');        // Remove the view site link
+    $wp_admin_bar->remove_menu('updates');          // Remove the updates link
+    $wp_admin_bar->remove_menu('comments');         // Remove the comments link
+    // $wp_admin_bar->remove_menu('new-content');      // Remove the content link
+    $wp_admin_bar->remove_menu('dashboard');      
+    $wp_admin_bar->remove_menu('themes');      
+    $wp_admin_bar->remove_menu('widgets');      
+    $wp_admin_bar->remove_menu('menus');      
+    $wp_admin_bar->remove_menu('customize');      
+    $wp_admin_bar->remove_menu('new-post');      
+    $wp_admin_bar->remove_menu('new-user');      
+    $wp_admin_bar->remove_menu('w3tc');             // If you use w3 total cache remove the performance link
+    // $wp_admin_bar->remove_menu('my-account');       // Remove the user details tab
+
+
+}
+add_action( 'wp_before_admin_bar_render', 'remove_admin_bar_links' );
+
+function remove_customize() {
+    $customize_url_arr = array();
+    $customize_url_arr[] = 'customize.php'; // 3.x
+    $customize_url = add_query_arg( 'return', urlencode( wp_unslash( $_SERVER['REQUEST_URI'] ) ), 'customize.php' );
+    $customize_url_arr[] = $customize_url; // 4.0 & 4.1
+    if ( current_theme_supports( 'custom-header' ) && current_user_can( 'customize') ) {
+        $customize_url_arr[] = add_query_arg( 'autofocus[control]', 'header_image', $customize_url ); // 4.1
+        $customize_url_arr[] = 'custom-header'; // 4.0
+    }
+    if ( current_theme_supports( 'custom-background' ) && current_user_can( 'customize') ) {
+        $customize_url_arr[] = add_query_arg( 'autofocus[control]', 'background_image', $customize_url ); // 4.1
+        $customize_url_arr[] = 'custom-background'; // 4.0
+    }
+    foreach ( $customize_url_arr as $customize_url ) {
+        remove_submenu_page( 'themes.php', $customize_url );
+    }
+}
+add_action( 'admin_menu', 'remove_customize', 999 );
+
+
+// logo login form
+
+function my_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo5.png);
+        height:100px;
+        width:300px;
+        background-size: 300px 100px;
+        background-repeat: no-repeat;
+            padding-bottom: 30px;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+function my_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );

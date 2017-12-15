@@ -20,36 +20,20 @@
 		<div class="footer__inner">
 			<div class="row">
 				<div class="col col-md-4 footer__inner-left">
-					<div>
-						
-					</div>
+					<h4 class="t4">Location</h4>
 
-					<?php dynamic_sidebar( 'footer_location' ); ?>
-
-
-					<?php 
-						// <nav class="menu--secondary">
-							// <a href="" class="menu__item">Home</a>
-						// 	<!-- <a href="about-us" class="menu__item">About us</a>
-						// 	<a href="work" class="menu__item">Work</a>
-						// 	<a href="contact" class="menu__item">Contact</a>
-						// </nav>  -->
-					 ?>
+					<div>350 Fifth Avenue,</div>
+					<div>34th floor. New York,</div>
+					<div>NY 10118-3299 USA</div>
 				</div>
 
-				<div class="col col-md-4 ">				
+				
+
+				<div class="col col-md-4 ">					
 					
-
-					<nav class="menu--secondary">
-						<a href="<?php echo home_url(); ?>" class="menu__item">Home</a>
-						<a href="<?php echo home_url(); ?>/about-us" class="menu__item">About us</a>
-						<a href="<?php echo home_url(); ?>/work" class="menu__item">Work</a>
-						<a href="<?php echo home_url(); ?>/contact" class="menu__item">Contact</a>
-					</nav> 
-				</div>
-
-				<div class="col col-md-4 footer__inner-right">					
-					<?php dynamic_sidebar( 'footer_info' ); ?>
+					<h4 class="t4">Contacts</h4>
+					<div>Tel: <a href="">333333 33</a></div>
+					<div>Email: <a href="mailto:<?php echo bloginfo('admin_email'); ?>" class=""><?php echo bloginfo('admin_email'); ?></a> </div>
 
 					<div>
 						<a href="" class="fb--link" target="_blank">
@@ -59,6 +43,17 @@
 							Follow Us
 						</a>
 					</div>
+				</div>
+
+				<div class="col col-md-4 footer__inner-right">				
+					
+					<h4 class="t4">Links</h4>
+					<nav class="menu--secondary">
+						<a href="<?php echo home_url(); ?>" class="menu__item">Home</a>
+						<a href="<?php echo home_url(); ?>/about-us" class="menu__item">About</a>
+						<a href="<?php echo home_url(); ?>/work" class="menu__item">Work</a>
+						<a href="<?php echo home_url(); ?>/contact" class="menu__item">Contact</a>
+					</nav> 
 				</div>
 			</div>
 		</div>

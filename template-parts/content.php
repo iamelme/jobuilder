@@ -71,7 +71,7 @@
 
 			let galCaption = galleryLink[x].parentNode.nextElementSibling;
 
-			setAttributes(galleryLink[x], {"data-lightbox" : el.id, "data-title" : galCaption != null ? galCaption.innerHTML : ''} );
+			setAttributes(galleryLink[x], {'data-lightbox' : el.id, 'class' : 'gallery__link', 'data-title' : galCaption != null ? galCaption.innerHTML : ''} );
 		}
 
 	});

@@ -47,32 +47,38 @@ get_header(); ?>
 	</section>
 
 
-	<section class="section section--padded section--grid effects" id="start">
+	<section class="section section--padded section--grey effects" id="start">
 		<div class="section__inner t-cnter ">
 			<h2 class="t4">WELCOME</h2>
 			<h2 class="section__title section__title-ntop t1">Why <span class="tc-red">choose us</span></h2>
 
 			<div class="grid ">
 				<div class="grid__item ">
-					<svg class="icon icon-treats icon-quality">
-					  	<use xlink:href="#icon-quality"></use>
-					</svg>
-					<div class="t3">Quality</div>
-					<p>Lorem ipsum dolor sit amet. </p>
+					<div class="grid__item--inner">
+						<svg class="icon icon-treats icon-quality">
+						  	<use xlink:href="#icon-quality"></use>
+						</svg>
+						<div class="t3">Quality</div>
+						<p>Lorem ipsum dolor sit amet. </p>
+					</div>
 				</div>
 				<div class="grid__item">
-					<svg class="icon icon-treats icon-flexible">
+					<div class="grid__item--inner">
+						<svg class="icon icon-treats icon-flexible">
 					  	<use xlink:href="#icon-flexible"></use>
-					</svg>
-					<div class="t3">Flexible</div>
-					<p>Lorem ipsum dolor sit amet. </p>
+						</svg>
+						<div class="t3">Flexible</div>
+						<p>Lorem ipsum dolor sit amet. </p>
+					</div>
 				</div>
 				<div class="grid__item">
-					<svg class="icon icon-treats icon-quick">
-					  	<use xlink:href="#icon-quick"></use>
-					</svg>
-					<div class="t3">Quick</div>
-					<p>Lorem ipsum dolor sit amet. </p>
+					<div class="grid__item--inner">
+						<svg class="icon icon-treats icon-quick">
+						  	<use xlink:href="#icon-quick"></use>
+						</svg>
+						<div class="t3">Quick</div>
+						<p>Lorem ipsum dolor sit amet. </p>
+					</div>
 				</div>
 			</div>
 		</div>
