@@ -50,7 +50,7 @@ get_header(); ?>
 	<section class="section section--padded section--grey effects" id="start">
 		<div class="section__inner t-cnter ">
 			<h2 class="t4">WELCOME</h2>
-			<h2 class="section__title section__title-ntop t1">Why <span class="tc-red">choose us</span></h2>
+			<h2 class="section__title section__title-ntop t1"><span class="tc-red">Why</span> choose us</h2>
 
 			<div class="grid ">
 				<div class="grid__item ">
@@ -106,7 +106,7 @@ get_header(); ?>
 						?>
 	
 
-						<h2 class="section__title  t2">Who <span class="tc-red">we are</span></h2>
+						<h2 class="section__title  t2"> <span class="tc-red">Who</span> we are</h2>
 
 							<?php
 
@@ -134,7 +134,7 @@ get_header(); ?>
 
 	<section class="section section--padded ">
 		<div class="section__inner ">
-			<h2 class="section__title t2">What <span class="tc-red">we do</span></h2>
+			<h2 class="section__title t2"><span class="tc-red">What</span> we do</h2>
 
 			<div class="row">
 				<div class="col col-md-9">

@@ -19,6 +19,10 @@
 			<path fill="none" stroke="#ed1c24" stroke-width="0.5333" stroke-miterlimit="10" stroke-linecap="butt" stroke-linejoin="miter" style="stroke: var(--color3, #ed1c24)" d="M14.467 17.733h5.267c0.587 0 1.067-0.48 1.067-1.067v-2.933c0-0.587-0.48-1.067-1.067-1.067h-10c-0.587 0-1.067 0.48-1.067 1.067v2.933c0 0.587 0.48 1.067 1.067 1.067h1.667"></path>
 		</symbol>
 
+		<symbol id="icon-facebook2" viewBox="0 0 32 32">
+			<path d="M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h13v-14h-4v-4h4v-2c0-3.306 2.694-6 6-6h4v4h-4c-1.1 0-2 0.9-2 2v2h6l-1 4h-5v14h9c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3z"></path>
+		</symbol>
+
 		<symbol id="icon-quality" viewBox="0 0 32 32">
 			<path fill="none" stroke="#ed1c24" stroke-width="0.5333" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color3, #ed1c24)" d="M18.778 19.437c-0.309 0.332-0.618 0.656-0.927 0.989-0.678-0.642-1.339-1.301-1.98-1.98 2.462-2.312 4.925-4.623 7.388-6.935 0.494 0.524 1.003 1.034 1.527 1.527-1.546 1.644-3.092 3.296-4.639 4.94"></path>
 			<path fill="#fff" stroke="#ed1c24" stroke-width="0.5333" stroke-miterlimit="10" stroke-linecap="butt" stroke-linejoin="miter" style="stroke: var(--color3, #ed1c24)" style="fill: var(--color2, #fff)" d="M25.545 12.721c0.879 0.196 1.567 0.884 1.764 1.764 0.586-0.585 1.17-1.169 1.754-1.754-0.88-0.197-1.567-0.885-1.764-1.764-0.586 0.584-1.171 1.169-1.754 1.754z"></path>

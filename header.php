@@ -38,8 +38,8 @@
 					<a href="mailto:<?php echo bloginfo('admin_email'); ?>" class="info invi-sm"><?php echo bloginfo('admin_email'); ?></a> 
 					<a href="tel:" class="info invi-sm">33333333</a> 
 					<a href="" class="info fb">
-						<svg  class="icon icon-facebook">
-						  	<use xlink:href="#icon-facebook"></use>
+						<svg  class="icon icon-facebook2">
+						  	<use xlink:href="#icon-facebook2"></use>
 						</svg>
 					</a>					
 				</div>
