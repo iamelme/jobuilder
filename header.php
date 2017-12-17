@@ -47,7 +47,7 @@
 		</div>
 		<div class="header__inner">
 			<a href="<?php echo home_url(); ?>" class="branding">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo5.png" style="max-height: 50px; margin-top: 1px" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo5.png"  alt="">
 			</a>
 			<div class="header__nav">
 				<div class="nav-trigger" data-target="main-header">

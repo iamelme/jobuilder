@@ -4,7 +4,7 @@
 	</div>
 
 	<div class="work__content">
-		<h2 class="t2"><?php the_title(); ?></h2>
+		<h2 class="t2 tc-red"><?php the_title(); ?></h2>
 		<div class="">
 			<?php 
 

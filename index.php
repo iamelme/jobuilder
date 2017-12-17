@@ -157,7 +157,7 @@ get_header(); ?>
 						?>
 					    <div class="item">
 					    	<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-					    		<img class="owl-lazy " data-src="<?php the_post_thumbnail_url( 'medium' ); ?>" alt="">
+					    		<img class="owl-lazy " data-src="<?php the_post_thumbnail_url( array( 198, 278 ) ); ?>" alt="">
 					    	</a>
 					    	<h2 class="t4 item__title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
 					    	<div class="item__content"><?php the_excerpt(); ?></div>

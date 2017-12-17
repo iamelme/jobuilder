@@ -9,9 +9,11 @@
 
 get_header(); ?>
 
-	<section class="section section--grey">
+	<section class="section ">
 		<div class="section__inner">
-			<?php the_breadcrumb(); ?>
+			<!-- <?php the_breadcrumb(); ?> -->
+
+
 		</div>
 	</section>
 
@@ -26,20 +28,18 @@ get_header(); ?>
 			?>
 <!-- http://themebubble.com/demo/adios/portfolio/gopro-recorder/ -->
 
+
+
 			<div class="single__thumb">
-				<?php the_post_thumbnail(); ?>
+				<?php the_post_thumbnail( 'full' ); ?>
 			</div>
+
+			<h1 class="t1 tc-red"><?php the_title(); ?></h1>
+
+			
 
 			<div class="main">
 
-				<!-- <aside class="sidebar">
-					<div class="social">
-						<a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode($current_url); ?>&t=<?php the_title(); ?>" class="social__item facebook" target="_blank" title="Share on Facebook">Facebook</a>
-						<a href="https://twitter.com/share?url=<?php echo urlencode($current_url); ?>&text=<?php the_title(); ?>" class="social__item twitter" target="_blank" title="Share on Twitter">Twitter</a>
-						<a href="https://plus.google.com/share?url=<?php echo urlencode($current_url); ?>" class="social__item google" target="_blank" title="Share on Google+">Google+</a>
-						<a href="mailto:?subject=<?php the_title(); ?>&amp;body=View our work here <?php echo urlencode($current_url); ?>" class="social__item mail"  title="Share on Email">Email</a>
-					</div>
-				</aside> -->
 
 
 					<?php
