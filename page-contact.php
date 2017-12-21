@@ -16,7 +16,6 @@ get_header(); ?>
 
 	<section class="section section--padded ">
 		<div class="section__inner">
-
 			<?php
 			while ( have_posts() ) : the_post();
 

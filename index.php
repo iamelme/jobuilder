@@ -106,7 +106,7 @@ get_header(); ?>
 						?>
 	
 
-						<h2 class="section__title  t2"> <span class="tc-red">Who</span> we are</h2>
+						<h2 class="section__title  t2"> Who we are</h2>
 
 							<?php
 
@@ -117,7 +117,7 @@ get_header(); ?>
 
 						        <?php the_excerpt(); ?>
 
-								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="link link--red">READ MORE</a>
+								<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="link link--white">READ MORE</a>
 
 							<?php 
 							    endwhile;

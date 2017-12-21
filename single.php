@@ -17,7 +17,7 @@ get_header(); ?>
 		</div>
 	</section>
 
-	<section class="section section--long section--">
+	<section class="section section--long section--padded">
 		<div class="section__inner">
 
 			<?php 
@@ -30,9 +30,9 @@ get_header(); ?>
 
 
 
-			<div class="single__thumb">
+			<!-- <div class="single__thumb">
 				<?php the_post_thumbnail( 'full' ); ?>
-			</div>
+			</div> -->
 
 			<h1 class="t1 tc-red"><?php the_title(); ?></h1>
 
